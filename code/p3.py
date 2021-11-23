@@ -1,4 +1,4 @@
-from numpy import *
+from  numpy import *
 from matplotlib.pyplot import *
 
 import sys
