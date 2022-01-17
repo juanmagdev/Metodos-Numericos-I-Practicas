@@ -13,9 +13,13 @@ def bisec(f,a,b,N):
     elif fan*fbn>0:
         print('No hay cambio de signo: no se puede aplicar el método')
         #return
+    
+    print("%1s %11s %11s" % ("k", "cn", "f(cn)" ))
+    
     for k in range(N):
         cn=(an+bn)/2.
         fcn=f(cn)
+        print("%1i %11.8f %11.8f" % (k, cn, fcn))
         if fcn==0:
             print(str(cn)+'es raíz de la función')
             return cn
