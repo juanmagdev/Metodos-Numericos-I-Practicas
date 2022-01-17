@@ -1,13 +1,9 @@
 from  numpy import *
 from matplotlib.pyplot import *
 
-import sys
-sys.setrecursionlimit(100) #para evitar errores recursivos
-
-
 #Ejercicio 1
 def puntoFijo(g, x0, eps, nmax):
-
+ 
     it = 0
     error = 1 + eps
     while error > eps and it<= nmax:
