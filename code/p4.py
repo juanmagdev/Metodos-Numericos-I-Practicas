@@ -131,7 +131,7 @@ print("A)")
 def splineLin(f, a, b, N):
     x = linspace(a, b, N + 1)
     y = f(x)
-    pol = inter1d(x, y, kind = "lineal")
+    pol = interp1d(x, y, kind = "lineal")
     return pol
 
 print()
@@ -140,5 +140,5 @@ print("B)")
 def splineCub(f, a, b, N):
     x = linspace(a, b, N + 1)
     y = f(x)
-    pol = inter1d(x, y, kind = "cubic")
+    pol = interp1d(x, y, kind = "cubic")
     return pol
